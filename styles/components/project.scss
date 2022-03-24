@@ -1,0 +1,34 @@
+@use "../base/functions.scss" as *;
+
+.project-title {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  font-size: 5rem;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  & span {
+    display: block;
+    text-align: right;
+  }
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+.proj {
+  margin-top: 7em;
+  & span {
+    display: block;
+  }
+}
+.proj2,
+.proj4 {
+  align-self: flex-end;
+}
+
+.project-image-container {
+  width: 500px;
+}
