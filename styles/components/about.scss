@@ -1,7 +1,182 @@
-.slide-out {
-  position: sticky;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  background-color: red;
-}
+@use "../base/functions.scss" as *;
+// .about-container {
+//     background-color: #F3EEEA;
+//     padding-bottom: 1em;
+//     min-height: 100%;
+// }
+// // .noise::before {
+// //     position: fixed;
+// //     content: "";
+// //     top: 0;
+// //     left: 0;
+// //     width: 100vw;
+// //     height: 100vh;
+// //     z-index: 50;
+// //     opacity: 0.01;
+// //     pointer-events: none;
+// //     background: url("/static/noise.gif");
+// // }
+// .about-flex {
+//     display: flex;
+//     padding: 2em 0;
+//     color: #82715D;
+//     font-family: "AvenirMedium";
+// }
+// .about-sideline {
+//     width: 40%;
+//     display: flex;
+//     flex-direction: column;
+//     padding-top: 2em;
+//     justify-content: space-evenly;
+// }
+// .about-section-title {
+//     font-family: "Ogg";
+//     letter-spacing: 1px;
+//     color: #836E5D;
+//     font-size: 2rem;
+//     margin-bottom: 1em;
+// }
+// .about-image-wrapper {
+//     margin-bottom: 3em;
+//     height: 200px;
+//     width: 200px;
+//     position: relative;
+//     &:before {
+//         content: "";
+//         position: absolute;
+//         z-index: 10;
+//         top: 20%;
+//         left: -40%;
+//         width: em(360);
+//         height: rem(100);
+//         background: transparent;
+//         -moz-border-radius: 20em/ 5em;
+//         -webkit-border-radius: 20em/ 5em;
+//         border-radius: 50%;
+//         transform: rotate3d(0, -1, 1, -47deg);
+//         border: 2px solid #836E5D;
+//     }
+//     &:after {
+//         content: "";
+//         position: absolute;
+//         z-index: 30;
+//         top: 20%;
+//         left: -40%;
+//         width: em(360);
+//         height: rem(100);
+//         background: transparent;
+//         -moz-border-radius: 20em/ 5em;
+//         -webkit-border-radius: 20em/ 5em;
+//         border-radius: 50%;
+//         transform: rotate3d(0, -1, 1, -47deg);
+//         border: 1px solid #836E5D;
+//         border-top-color: transparent;
+//     }
+// }
+// .image-about {
+//     border-radius: 50%;
+//     z-index: 30;
+// }
+// .education-item {
+//     margin-bottom: 1.5em;
+//     & p {
+//         margin-bottom: 0.5em;
+//     }
+//     & .edu-text-b {
+//         font-family: "AvenirHeavy";
+//     }
+// }
+// .lang-item-wrapper {
+//     display: flex;
+//     align-items: center;
+//     & .lang-item {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         padding-right: 1.5em;
+//     }
+//     .lang-info {
+//         text-align: center;
+//         & h3 {
+//             font-family: "Ogg";
+//             font-size: 1rem;
+//         }
+//         & p {
+//             line-height: 1px;
+//             font-size: 0.8rem;
+//             font-family: "AvenirMedium";
+//         }
+//     }
+// }
+// .circular-counter {
+//     width: 80px;
+//     height: 80px;
+//     margin-bottom: 0.5em;
+//     .CircularProgressbar-path {
+//         stroke: #836E5D!important;
+//         stroke-width: 2px!important;
+//     }
+//     .CircularProgressbar-trail {
+//         stroke: #e0ceb8!important;
+//         stroke-width: 2px!important;
+//     }
+//     .CircularProgressbar-text {
+//         fill: #836E5D!important;
+//         font-family: "Ogg";
+//         text-align: center;
+//     }
+//     .CircularProgressbar-background {
+//         fill: green;
+//     }
+// }
+// .top-info {
+//     height: 20%;
+// }
+// .skills-section {
+//     margin-bottom: 2em;
+// }
+// .progress-item {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     margin-bottom: 0.5em;
+// }
+// .progressbar-container {
+//     height: 3px;
+//     width: 280px;
+//     background-color: #e0ceb8;
+//     border-radius: 3px;
+//     margin-right: 0.8em;
+// }
+// .progressbar-filler {
+//     position: relative;
+//     height: 100%;
+//     width: 0;
+//     background-color: #836E5D;
+//     border-radius: inherit;
+//     text-align: right;
+// }
+// .item-label {
+//     line-height: 1px;
+//     width: 120px;
+//     font-size: 1rem;
+//     font-family: "AvenirRoman";
+//     letter-spacing: 1px;
+// }
+// .progressbar-label {
+//     color: #836E5D;
+//     font-size: 0.8rem;
+//     font-family: "Ogg";
+//     font-weight: 600;
+// }
+// .system-section {}
+// .system-info-wrapper li {
+//     margin-bottom: 0.5em;
+//     font-family: "AvenirRoman";
+//     & span {
+//         font-family: "AvenirHeavy";
+//     }
+// }
+// .strength-section {
+//     margin-bottom: 3em;
+// }

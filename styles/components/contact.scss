@@ -1,0 +1,166 @@
+.contact-container {
+    background-color: #231F20;
+    color: #E0D8CD;
+}
+
+.contact-footer-section {
+    padding: 10rem 10rem 4rem;
+}
+
+.contact-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.contact-title {
+    font-size: 14.5vh;
+    font-family: IvyMode;
+    font-weight: 300;
+    color: #E0D8CD;
+    margin-bottom: 1em;
+}
+
+.social-item {
+    & h3 {
+        display: block;
+        font-family: WorkSans;
+        font-weight: 300;
+        opacity: 0.6;
+        font-size: 2rem;
+        line-height: 1.25;
+        margin-bottom: 1em;
+        letter-spacing: 1px;
+    }
+    & .social-list {
+        font-family: IbarraRealNova;
+        font-size: 3.375rem;
+        line-height: 1.5;
+        & a {
+            position: relative;
+        }
+        & a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #E5D8C7;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .8s cubic-bezier(.19, 1, .22, 1), -webkit-transform .8s cubic-bezier(.19, 1, .22, 1);
+        }
+        & a:hover::before {
+            transform: scaleX(100%);
+            transform-origin: left;
+        }
+    }
+}
+
+.contact-header {
+    & p {
+        font-family: WorkSans;
+        padding-bottom: 2em;
+    }
+}
+
+.btn-connect {
+    border-bottom: 1px solid rgba(240, 240, 243, .18);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: IbarraRealNova;
+    font-size: 1.6rem;
+    padding: 15px 0;
+    margin-bottom: 2em;
+    box-shadow: inset 0 0 #E5D8C7;
+    transition: all .6s;
+    & svg {
+        width: 20;
+        height: 20;
+    }
+    & path {
+        transition: all .6s;
+    }
+    &:hover {
+        box-shadow: 0 -150px 0 0 #E5D8C7 inset;
+        color: #111111;
+        padding: 15px 1.3em;
+    }
+    &:hover path {
+        fill: #111111;
+    }
+}
+
+.credit {
+    & p {
+        font-size: 0.8rem;
+        opacity: 0.6;
+    }
+}
+
+.btn-connect .contact-header {
+    // & h2 {
+    //     font-size: 9vw;
+    //     font-family: WorkSans;
+    //     text-transform: uppercase;
+    //     display: flex;
+    //     flex-direction: column;
+    //     line-height: 1em;
+    //     letter-spacing: 1px;
+    //     color: #FBF8EF;
+    //     & span:nth-child(1) {
+    //         padding-left: 1em;
+    //     }
+    //     & span:nth-child(2) {}
+    //     & span:nth-child(3) {
+    //         padding-left: 1em;
+    //     }
+    // }
+}
+
+// .left-content {
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: flex-start;
+//     & h1 {
+//         font-family: "Ogg";
+//         color: #fff7ed;
+//         text-align: center;
+//         font-size: 10rem;
+//         opacity: 0;
+//         transition: opacity 2s;
+//     }
+//     & p {
+//         color: #fff7ed;
+//         font-family: "AvenirMedium";
+//         text-align: center;
+//         font-size: 1.2rem;
+//         margin-bottom: 3em;
+//         opacity: 0;
+//     }
+// }
+// .email-button-wrapper {
+//     text-align: center;
+//     & a {
+//         border: 1px solid #fff7ed;
+//         font-size: 1rem;
+//         font-family: "AvenirHeavy";
+//         color: #fff7ed;
+//         padding: 0.5em 2em;
+//     }
+// }
+// .footer-wrapper {
+//     width: 100%;
+//     height: 15%;
+//     background-color: #1d1d1d;
+//     position: absolute;
+//     bottom: 0;
+// }
+// //locomotive-class
+// .left-content .appear {
+//     opacity: 1;
+// }

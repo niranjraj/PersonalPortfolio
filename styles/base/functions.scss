@@ -1,8 +1,30 @@
 @use "sass:math";
-
 @function rem($pixels, $context: 16) {
-  @return (math.div($pixels, $context)) * 1rem;
+    @return (math.div($pixels, $context)) * 1rem;
 }
+
 @function em($pixels, $context: 16) {
-  @return (math.div($pixels, $context)) * 1em;
+    @return (math.div($pixels, $context)) * 1em;
+}
+
+@mixin divider($size:2vw, $height:2px) {
+    width: $size;
+    height: $height;
+    border: none;
+    transition: box-shadow 1.9s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-delay: .5s;
+    margin: 0 1.3em;
+    position: relative;
+    display: block;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #b6997e;
+        transition: 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-delay: .8s;
+    }
 }

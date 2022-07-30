@@ -1,34 +1,81 @@
 @use "../base/functions.scss" as *;
-
-.project-title {
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-between;
-  font-size: 5rem;
-}
-
-.project-description {
-  font-size: 1.2rem;
-  & span {
-    display: block;
-    text-align: right;
-  }
-}
 .project-container {
-  display: flex;
-  flex-direction: column;
-}
-.proj {
-  margin-top: 7em;
-  & span {
-    display: block;
-  }
-}
-.proj2,
-.proj4 {
-  align-self: flex-end;
+    background-color: #E0D8CD;
+    color: #231F20;
+    position: relative;
 }
 
-.project-image-container {
-  width: 500px;
+.projects {
+    padding: 10rem 10rem 4rem;
+}
+
+.project-header {
+    font-size: 14.5vh;
+    font-family: IvyMode;
+    font-weight: 300;
+    color: #231F20;
+    margin-bottom: 1em;
+}
+
+.projects-layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.project-item-wrapper {
+    margin-bottom: 9rem;
+    width: 100%;
+    &-0 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    &-1 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    &-2 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    &-3 {
+        grid-column: 1/2;
+        grid-row: 4/4;
+    }
+}
+
+.proj-img {
+    clip-path: inset(100% 0% 0% 0%);
+    transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+    &.is-inview {
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+.project-item-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item-text {
+    font-family: WorkSans, Helvetica Neue;
+    padding-top: em(20);
+    color: #111111;
+    display: flex;
+    & .project-counter {
+        font-family: WorkSansSemiBold;
+        font-size: rem(20);
+    }
+    & .project-text-line {
+        margin-left: 2.5em;
+    }
+    & .project-title {
+        font-family: WorkSansSemiBold;
+        font-size: rem(20);
+    }
+    & .project-type {
+        opacity: 0.7;
+        font-size: rem(14);
+    }
 }
